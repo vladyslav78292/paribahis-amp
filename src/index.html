@@ -234,7 +234,7 @@
       }
 
       .list__container-text {
-        width: 65%;
+        width: 70%;
       }
 
       @media (max-width: 1200px) {
@@ -273,6 +273,8 @@
       @media (max-width: 1024px) {
         .header {
           flex-wrap: wrap;
+          display: block;
+          height: 150px;
         }
       }
 
@@ -285,6 +287,10 @@
         .sport__container {
           flex-direction: column;
           gap: 30px ;
+        }
+
+        .sport__text {
+          width: 100%;
         }
 
         .sport {
@@ -301,15 +307,15 @@
           width: 100%;
         }
 
+        .header {
+          height: auto;
+        }
+
         .mobile {
           width: 100%;
         }
 
         .bonuses {
-          width: 100%;
-        }
-
-        .registration {
           width: 100%;
         }
       }
@@ -364,6 +370,11 @@
       }
 
       @media (max-width: 768px) {
+        .header {
+          display: flex;
+          height: auto;
+        }
+
         .header__menu ul {
           display: inline-flex;
           align-items: center;
@@ -1486,7 +1497,7 @@
     Değilse zaten giriş işleminiz başarıyla tamamlanacaktır.</li>
   </ul>
   </div>
-  <amp-img width="475" height="320" layout="responsive" class="registration" src="images/pb_registration.jpg" alt="registration"></amp-img>
+  <amp-img width="260" height="260" layout="responsive" class="registration" src="images/pb_registration.jpg" alt="registration"></amp-img>
 </div>
 <h2 class="main__pretitle" id="hesap">Paribahis Hesap İptali</h2>
 <p class="main__paragraph main__paragraph--first">
@@ -1901,7 +1912,7 @@
         kullanımınız mümkündür.
     </li>
 </ol>
-<amp-img width="288" height="288" class="mobile" src="./images/pb_mobile.jpg" alt="mobile version"></amp-img>
+<amp-img width="288" height="288" class="mobile" src="images/pb_mobile.jpg" alt="mobile version"></amp-img>
 <div class="ninth__table table">
   <div class="ninth__table-row">
     <div class="table-title-container ninth__table-title-container">
