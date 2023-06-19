@@ -60,7 +60,7 @@
       }
 
       .main {
-        margin-top: 30px;
+        margin-top: 128px;
         margin-bottom: 60px;
         margin-left: 244px;
         margin-right: 224px;
@@ -88,6 +88,7 @@
         width: 230px;
         line-height: 18px;
         font-weight: 400;
+        align-self: flex-start;
       }
 
       .list_element-link {
@@ -165,11 +166,12 @@
         justify-content: space-between;
         background-color: #191a1f;
         padding: 10px calc((100% - 1170px) / 2);
-        z-index: 5;
+        z-index: 25;
       }
 
       .content_container {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         gap: 20px;
       }
@@ -276,6 +278,10 @@
           display: block;
           height: 150px;
         }
+
+        .main {
+          margin-top: 180px;
+        }
       }
 
       .header__logo-image {
@@ -350,6 +356,10 @@
       @media (max-width: 768px) {
         .header__menu {
           min-height: 50px;
+        }
+
+        .main {
+          margin-top: 128px;
         }
       }
 
@@ -570,7 +580,7 @@
       }
 
       .fourth-table-title {
-        width: 135px;
+        width: 145px;
       }
 
       .fifth-table-title {
@@ -618,7 +628,6 @@
 
       @media (max-width: 1200px) {
         .main {
-          margin-top: 50px;
           margin-left: 116px;
           margin-right: 99px;
         }
@@ -820,6 +829,82 @@
 
         .bonus-image--second {
           background-image: url('images/bonus-image-second-mobile.jpg');
+        }
+      }
+      .main__feedback-title {
+        font-size: 24px;
+        color: white;
+        font-weight: 700;
+        line-height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main__feedback {
+        background-color: #191a1f;
+        display: flex;
+        padding: 40px 66px;
+        gap: 65px;
+        align-items: center;
+      }
+
+      .person__photo {
+        height: 183px;
+        width: 183px;
+        border-radius: 50%;
+      }
+
+      .person__name {
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      .main__person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .main__feedback-text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+
+      .main__feedbacks-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 1200px) {
+        .main__feedback {
+          padding: 30px 34px;
+          gap: 35px;
+        }
+
+        .main__feedback-text {
+          line-height: 23px;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .main__feedback {
+          padding: 30px 34px;
+          gap: 35px;
+          text-align: center;
+          flex-direction: column;
+        }
+
+        .main__feedback-text {
+          text-align: center;
+        }
+
+        .main__feedbacks-container {
+          gap: 30px;
         }
       }
     </style>
@@ -2004,6 +2089,80 @@
     deneyimi farklı olabilir ve bahis oynamadan önce platformun kurallarını ve
     politikalarını dikkatlice incelemek önemlidir.
 </p>
+      <h3 class="main__pretitle main__feedback-title">Paribahis Yorumlar</h3>
+      <div class="main__feedbacks-container">
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person1.jpg" alt="person">
+            <p class="person__name">Kartal, 22</p>
+          </div>
+          <p class="main__feedback-text">Paribahis Türkiye’nin en prestijli ve en güvenli bahis firmalarından birisidir. Adından çok 
+            sayıda söz ettirmiş bir bahis sitesi olarak üyelerine en yüksek derecede hizmet sunarak 
+            daim oyuncularının güvenini kazanmış bir firmadır.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person2.jpg" alt="person">
+            <p class="person__name">Erme, 27</p>
+          </div>
+          <p class="main__feedback-text">Üyelerin küçük bir sorun olmasında dahi her zaman 7/24 canlı destek hizmeti sunan 
+            Paribahis şikayet konusunda minimum seviyededir. Herhangi bir sorun yaşandığında 
+            anında sitenin müşteri temsilcileri oyuncuyla iletişime geçip üyenin sorununu en kısa 
+            süre içerisinde çözer.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person3.jpg" alt="person">
+            <p class="person__name">Ömer, 53</p>
+          </div>
+          <p class="main__feedback-text">Paribahis yatırım yöntemlerinde çok çeşit olması sitenin çok büyük artısıdır. Para yatır
+            kısmında 16’dan fazla yatırım yöntemi bulunmaktadır ve her biri çok kolay ve basit bir 
+            yöntemlerdir para yatırma işlemini 5 dakika içerisinde tamamlanıyor.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person4.jpg" alt="person">
+            <p class="person__name">Yıldız, 38</p>
+          </div>
+          <p class="main__feedback-text">Paribahis sitesine ara sıra giriş yaparken sorun yaşıyordum adres değişikliği 
+            yüzünden, ama mobil versiyonu olduğunu öğrendiğimde bu sorun çözüldü. Bonus 
+            sayfasında en aşağıda bulunan linke tıklayarak mobil versiyonunu indirdim ve giriş 
+            konusunda işim çok kolaylaştı daim güncel adres olarak artık giriş yapıyorum.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person5.jpg" alt="person">
+            <p class="person__name">İlker, 26</p>
+          </div>
+          <p class="main__feedback-text">Para çekmek isterken belge talebinde bulundukları zaman biraz rahatsız oldum, doğal
+            olarak güvenlik problemlerinden dolayı. Fakat Paribahis sitesinin lisansını kontrol ettim 
+            ve güvenilir olduğuna emin oldum. Belgelerimi gönderdiğim zaman bu işlem çok uzun 
+            sürer diye zannettim fakat 5-10 dakika içerisinde müşteri temsilcileri evraklarımı 
+            hesabıma ekleyerek profilimi doğruladılar ve bana bu konu hakkında bilgi verdiler, 
+            ardından hemen çekme işlemini başlattım ve başarıyla sonuçlandı.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person6.png" alt="person">
+            <p class="person__name">Aykut, 34</p>
+          </div>
+          <p class="main__feedback-text">Üyelik bonusu hakkında çok bilgim yoktu, fakat yatırım yaptığım zaman Paribahis 
+            sitesine yatırım ile beraber bonuslarımda otomatik olarak hesabıma tanımlandı, ekstra 
+            olarak freespin hediye ettiler fakat bu freespinleri canlı destek hattına bağlanarak müşteri
+            temsilcilerinizden talep etmeniz gerekiyor.</p>
+        </div>
+        <div class="main__feedback">
+          <div class="main__person">
+            <img class="person__photo" src="images/feedback_person7.jpg" alt="person">
+            <p class="person__name">Temmuz, 42</p>
+          </div>
+          <p class="main__feedback-text">İlk defa bahis oynamak istiyordum ama hangi firmada oynayacağıma karar 
+            veremiyordum, birçok araştırmaların ardından Paribahis’de bahis almaya karar verdim 
+            ve hiç pişman değilim. Hem güvenlik hem oyunlar konusunda çok basit ve rahat bir 
+            sitedir. Oyunlar hakkında eğer bir bilginiz yoksa her oyuna giriş yaptığınız zaman oyun 
+            kurallarını okuyarak öğrenip bahis heyecanınıza devam edebilirsiniz.</p>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-copy">Tüm haklara ve koşullara saygı duyulur. Paribahis © 2023</p>
